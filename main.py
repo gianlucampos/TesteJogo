@@ -1,28 +1,11 @@
-import Bola
-import Tiro
-import Teclas
+from Comandos import Teclas
+from Movimento.M_bola import move_bola
+from Movimento.M_tiro import move_bala, esconde_bala
 
+Teclas
 
 # main do jogo
 while True:
-    x = Bola.bola.xcor()
-    x += Bola.bolavelocidade
-    if Bola.bola.xcor() > 240:
-        x = 240
-        Bola.bolavelocidade *= -1
-
-    if Bola.bola.xcor() < -240:
-        x = -240
-        Bola.bolavelocidade *= -1
-    Bola.bola.setx(x)
-
-    # move bala
-    if Tiro.estado_tiro == "fogo":
-        y = Tiro.tiro.ycor()
-        y += 15
-        Tiro.tiro.sety(y)
-
-    # esconde bala
-    if Tiro.tiro.ycor() > 240:
-        Tiro.tiro.hideturtle()
-        Tiro.estado_tiro = "pronto"
+    move_bola()
+    move_bala()
+    esconde_bala()
