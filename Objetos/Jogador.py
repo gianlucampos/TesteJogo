@@ -7,4 +7,5 @@ jogador.up()
 jogador.speed(0)
 jogador.setheading(90)
 jogador.setposition(0, -210)
+jogador.color("blue")
 velocidadeJogador = 15

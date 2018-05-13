@@ -1,8 +1,12 @@
 from Objetos import Bola, Jogador, Tiro, Janela
 
+JanelaAtiva = True
+
 
 def tchau():
-    Janela.janela.bye()
+    global JanelaAtiva
+    JanelaAtiva = False
+    # Janela.janela.bye()
 
 
 def reseta_tela():
