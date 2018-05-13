@@ -9,4 +9,5 @@ tiro.penup()
 tiro.setheading(90)
 tiro.speed(0)
 estado_tiro = "pronto"
+tiro.setposition(0, -210)
 tiro.hideturtle()
