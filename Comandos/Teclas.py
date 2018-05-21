@@ -15,3 +15,8 @@ janela.onkey(Funcao_Janela.reseta_tela, "r")
 
 # Fecha o Jogo
 janela.onkey(Funcao_Janela.tchau, "q")  # quit game
+
+# inserir isso ao clicar no X
+# janela.exitonclick()
+# ou isso
+# janela.bye()

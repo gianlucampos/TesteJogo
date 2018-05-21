@@ -1,17 +1,14 @@
 from Objetos import Bola, Jogador, Tiro, Janela
-
 JanelaAtiva = True
 
 
 def tchau():
     global JanelaAtiva
     JanelaAtiva = False
-    # Janela.janela.bye()
 
 
 def reseta_tela():
     Janela.janela.resetscreen()
-    Jogador.jogador.shape("turtle")
     Jogador.jogador.up()
     Jogador.jogador.speed(0)
     Jogador.jogador.setheading(90)
@@ -26,3 +23,4 @@ def reseta_tela():
     Tiro.tiro.penup()
     Tiro.tiro.setposition(0, -210)
     Bola.bola.penup()
+    Bola.bola.color("yellow")

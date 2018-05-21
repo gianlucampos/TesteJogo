@@ -11,5 +11,4 @@ def move_bola():
     if bola.xcor() < -238:
         x = -238
         Bola.bolavelocidade *= -1
-
     bola.setx(x)
